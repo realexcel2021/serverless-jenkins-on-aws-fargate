@@ -9,8 +9,10 @@ terraform {
     bucket = "snappy-terraform-state-files"
     key    = "serverless-jenkins.tfstate"
     encrypt = true
+    region = "us-west-2"
   }
 }
 
 provider "aws" {
+  region = "us-west-2"
 }
